@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 3
+    },
+    {
+      "id": 2,
+      "name": "Lapizeira Faber Castell 7.0",
+      "price": 9.99
+    },
+    {
+      "id": 3,
+      "name": "Caderno Ecko Red 10 Matérias",
+      "price": 39.99
+    },
+    {
+      "name": "Corretivo líquido",
+      "price": "7.49",
+      "id": 4
+    }
+  ]
+}
