@@ -9,15 +9,12 @@ import {Product} from "../product.model";
   styleUrls: ['./product-update.component.css']
 })
 export class ProductUpdateComponent implements OnInit{
-  product: Product = {
-    name: '',
-    price: 0
-  }
+  product!: Product
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) {
   }
   ngOnInit(): void {
-    const id= this.route.snapshot.paramMap.get('id')!
-    this.productService.readByID(id).subscribe(product => {
+    const id= Number(this.route.snapshot.paramMap.get('id'))
+    this.productService.readByID(id!).subscribe(product => {
       this.product = product
     })
   }
